@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-item img {
+            height: 600px;
+            width: auto;
+            margin: auto;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .carousel-item img {
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .description-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Travel Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="1asik/contactme.html">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="text-center my-5">
+    <h1>My Travel Portfolio</h1>
+    <p>Explore the most amazing destinations I've visited</p>
+</header>
+
+<div id="carouselExampleCaptions" class="carousel slide my-5" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="montenegro.jpg" class="d-block" alt="Podgorica">
+        </div>
+        <div class="carousel-item">
+            <img src="schkodra_albania.jpg" class="d-block" alt="Shkodra">
+        </div>
+        <div class="carousel-item">
+            <img src="bologna.jpg" class="d-block" alt="Bologna">
+        </div>
+        <div class="carousel-item">
+            <img src="venice11.jpg" class="d-block" alt="Venice">
+        </div>
+        <div class="carousel-item">
+            <img src="Monaco.jpg" class="d-block" alt="Monaco">
+        </div>
+        <div class="carousel-item">
+            <img src="geneve.jpg" class="d-block" alt="Geneva">
+        </div>
+        <div class="carousel-item">
+            <img src="moscow.jpg" class="d-block" alt="Moscow">
+        </div>
+        <div class="carousel-item">
+            <img src="paris.jpg" class="d-block" alt="Paris">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="description-card">
+                <h5>Discover Montenegro</h5>
+                <p>Experience the stunning natural beauty and vibrant culture of Montenegro.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="description-card">
+                <h5>Shkodra Adventures</h5>
+                <p>Explore the rich history and scenic landscapes of Shkodra.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="description-card">
+                <h5>Bologna's Culinary Delights</h5>
+                <p>Indulge in the exquisite cuisine and charming atmosphere of Bologna.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Sultan Kissamedinov | Travel Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
